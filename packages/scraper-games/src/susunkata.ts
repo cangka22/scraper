@@ -5,7 +5,7 @@ export let susunkatajson: SusunKata[]
 export default async function susunkata (): Promise<SusunKata> {
   if (!susunkatajson) {
     susunkatajson = await got(
-      'https://raw.githubusercontent.com/BochilTeam/database/master/games/susunkata.json'
+      'https://raw.githubusercontent.com/cangka22/database/master/games/susunkata.json'
     ).json()
   }
   return SusunKataSchema.parse(
