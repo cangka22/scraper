@@ -5,7 +5,7 @@ export let tebaktebakanjson: TebakTebakan[]
 export default async function tebaktebakan (): Promise<TebakTebakan> {
   if (!tebaktebakanjson) {
     tebaktebakanjson = await got(
-      'https://raw.githubusercontent.com/BochilTeam/database/master/games/tebaktebakan.json'
+      'https://raw.githubusercontent.com/cangka22/database/master/games/tebaktebakan.json'
     ).json()
   }
   return TebakTebakanSchema.parse(
