@@ -5,7 +5,7 @@ export let tebakkimiajson: TebakKimia[]
 export default async function tebakkimia (): Promise<TebakKimia> {
   if (!tebakkimiajson) {
     tebakkimiajson = await got(
-      'https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkimia.json'
+      'https://raw.githubusercontent.com/cangka22/database/master/games/tebakkimia.json'
     ).json()
   }
   return TebakKimiaSchema.parse(
