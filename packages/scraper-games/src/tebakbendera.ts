@@ -5,7 +5,7 @@ export let tebakbenderajson: TebakBendera[]
 export default async function tebakbendera (): Promise<TebakBendera> {
   if (!tebakbenderajson) {
     tebakbenderajson = await got(
-      'https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakbendera.json'
+      'https://raw.githubusercontent.com/cangka22/database/master/games/tebakbendera.json'
     ).json()
   }
   return TebakBenderaSchema.parse(
