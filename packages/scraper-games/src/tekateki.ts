@@ -5,7 +5,7 @@ export let tekatekijson: TekaTeki[]
 export default async function tekateki (): Promise<TekaTeki> {
   if (!tekatekijson) {
     tekatekijson = await got(
-      'https://raw.githubusercontent.com/BochilTeam/database/master/games/tekateki.json'
+      'https://raw.githubusercontent.com/cangka22/database/master/games/tekateki.json'
     ).json()
   }
   return TekaTekiSchema.parse(
